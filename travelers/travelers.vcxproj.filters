@@ -21,10 +21,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="class.h">
+    <ClInclude Include="travelers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="travelers.h">
+    <ClInclude Include="character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
