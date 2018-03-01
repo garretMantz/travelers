@@ -3,12 +3,15 @@
 // had way more but ive been up for 3 hours messing with fucking git.
 #include <string>
 #include <iostream>
+#include "role.h"
 using namespace std;
 
 class character {
 private: 
 	int health, attack, defense, energy;
 	string role,name;
+	
+	
 public:
 
 	void characterCreation() {
@@ -21,6 +24,12 @@ public:
 		cout << "Magician" << endl;
 		cout << "Thief" << endl << endl;
 		cin >> role;
+
+		if (role == "Farmer") {
+
+			role 
+
+		}
 	}
 
 };
