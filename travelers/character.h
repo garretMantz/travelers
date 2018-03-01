@@ -10,10 +10,17 @@ private:
 	int health, attack, defense, energy;
 	string role,name;
 public:
+
 	void characterCreation() {
 		cout << "What is your name, traveler?" << endl;
 		cin >> name;
+		system("cls");
 		cout << "Welcome to Travelers, " << name << ". We've been waiting for someone like you." << endl;
+		cout << "What is your job, " << name << "?" << endl;
+		cout << "Farmer" << endl;
+		cout << "Magician" << endl;
+		cout << "Thief" << endl << endl;
+		cin >> role;
 	}
 
 };
