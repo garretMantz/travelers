@@ -8,8 +8,10 @@ private:
 	
 public:
 	void play() {
-		character c1;
-		c1.characterCreation();
+		character player = character();
+
+	//intro begin
+		player.setPlayerName();
 	}
 
 };
