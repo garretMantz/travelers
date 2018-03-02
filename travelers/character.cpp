@@ -7,6 +7,10 @@
 using namespace std;
 
 character::character() {
+	attack = 10;
+	defence = 10;
+	stamina = 50;
+	totalStamina = 50;
 	hitPoints = 100; //sets player's current health.
 	totalHitPoints = 100; //sets player's current maximum health.
 	level = 1; // sets players base level.
@@ -40,20 +44,32 @@ void character::setPlayerClass() {
 		
 		system("cls");
 	}
+
+	if (playerClass == "farmer") {
+
+		
+
+	}
 }
 
 void character::useHealthPotion() {
-
+	//enum Potion {small, regular, max};
 }
 
 void character::useManaPotion() {
 
 }
 
-void character::checkStats() {
+int character::checkStats() {
+
+	std::cout << "Player stats" << endl;
+	//not sure how to access the character we made in play?
+	//cout << player (operator overload for this in travelers.h
+	return cout << attack;
 
 }
 
 void character::checkInventory() {
 
 }
+

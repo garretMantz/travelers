@@ -7,6 +7,7 @@
 using namespace std;
 
 class character {
+	friend ostream& operator << (ostream &left, character right);
 private: 
 	//character attributes
 	int attack;
@@ -15,6 +16,9 @@ private:
 	int level;
 	int experience;
 	int experienceNeeded;
+	int stamina;
+	int totalStamina;
+	int defence;
 	//strings
 	string playerClass;
 	string playerName;
@@ -26,7 +30,7 @@ public:
 	//functions, item usage.
 	void useHealthPotion();
 	void useManaPotion();
-	void checkStats();
+	int checkStats();
 	void setPlayerClass();
 	void setPlayerName();
 	void checkInventory();
