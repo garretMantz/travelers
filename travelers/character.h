@@ -30,7 +30,7 @@ public:
 	//functions, item usage.
 	void useHealthPotion();
 	void useManaPotion();
-	int checkStats();
+	void checkStats();
 	void setPlayerClass();
 	void setPlayerName();
 	void checkInventory();
@@ -42,3 +42,14 @@ public:
 
 };
 
+ostream& operator << (ostream &left, character right) {
+
+	left << "Character Level: " << right.level << endl;
+	left << "Total HitPoints: " << right.totalHitPoints << endl;
+	left << "Attack Value: " << right.attack << endl;
+	left << "Defence Value: " << right.defence << endl;
+	left << "Total Stamina: " << right.totalStamina << endl;
+
+	return left;
+
+}

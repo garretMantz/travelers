@@ -20,14 +20,3 @@ public:
 
 };
 
-ostream& operator << (ostream &left, character right) {
-
-	left << "Character Level: " << right.level << endl;
-	left << "Total HitPoints: " << right.totalHitPoints << endl;
-	left << "Attack Value: " << right.attack << endl;
-	left << "Defence Value: " << right.defence << endl;
-	left << "Total Stamina: " << right.totalStamina << endl;
-
-	return left;
-
-}

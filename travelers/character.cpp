@@ -60,12 +60,12 @@ void character::useManaPotion() {
 
 }
 
-int character::checkStats() {
+void character::checkStats() {
 
 	std::cout << "Player stats" << endl;
 	//not sure how to access the character we made in play?
-	//cout << player (operator overload for this in travelers.h
-	return cout << attack;
+	cout << character(); 
+	
 
 }
 
