@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="character.h" />
+    <ClInclude Include="equipment.h" />
     <ClInclude Include="role.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />

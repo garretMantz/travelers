@@ -13,7 +13,9 @@ public:
 	//intro begin
 		player.characterCreation();
 
+
 		player.checkStats();
+		player.checkEquipment();
 
 		system("pause");
 	}

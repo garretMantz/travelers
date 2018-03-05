@@ -1,7 +1,9 @@
+#pragma once
 #include "stdafx.h" 
 #include <string>
 #include <iostream>
 #include "character.h"
+
 
 
 using namespace std;
@@ -67,6 +69,15 @@ void character::checkStats() {
 	cout << character(); 
 	
 
+}
+
+void character::checkEquipment() {
+
+	std::cout << "Player Equipment" << endl;
+	//for (int equipSlot = 0; equipSlot < 2; equipSlot++) {
+
+		std::cout << equipment();
+	//}
 }
 
 void character::checkInventory() {

@@ -1,9 +1,11 @@
+#pragma once
 // thinking of using an upgrading class system.
 // e.g. thief->bandit->trickster->ninja->shadow etc.
 // had way more but ive been up for 3 hours messing with fucking git.
 #include <string>
 #include <iostream>
 #include <cctype>
+#include "equipment.h"
 using namespace std;
 
 class character {
@@ -22,6 +24,8 @@ private:
 	//strings
 	string playerClass;
 	string playerName;
+
+	equipment playerEquip;
 	
 	
 public:
@@ -34,6 +38,7 @@ public:
 	void setPlayerClass();
 	void setPlayerName();
 	void checkInventory();
+	void checkEquipment();
 	void characterCreation();
 
 	//combat
@@ -53,3 +58,4 @@ ostream& operator << (ostream &left, character right) {
 	return left;
 
 }
+
